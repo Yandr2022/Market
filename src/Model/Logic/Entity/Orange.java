@@ -3,8 +3,8 @@ package Model.Logic.Entity;
 public class Orange {
     private int diameter;
     private int vitC;
-    private int cost;
-    public Orange() {
+    private double cost;
+    public Orange(int diameter, int vitC, double cost) {
 
     }
 
@@ -16,7 +16,7 @@ public class Orange {
         return vitC;
     }
 
-    public int getCost() {
+    public double getCost() {
         return cost;
     }
 
@@ -30,5 +30,14 @@ public class Orange {
 
     public void setCost(int cost) {
         this.cost = cost;
+    }
+
+    @Override
+    public String toString() {
+        return "Orange {" +
+                "diameter = " + diameter +
+                ", vitC = " + vitC +
+                ", cost = " + cost +
+                '}';
     }
 }
